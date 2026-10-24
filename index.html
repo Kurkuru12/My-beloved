@@ -1,0 +1,432 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08152f" />
+    <meta
+      name="description"
+      content="A little midnight-blue universe made just for my beloved baby."
+    />
+    <title>To My Beloved Baby ♡</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+    <div class="floating-layer" id="floating-layer" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#home">
+        <span class="brand-heart">♡</span> To My Beloved Baby
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav id="nav">
+        <a href="#memories">Our photos</a>
+        <a href="#letter">Love letter</a>
+        <a href="#playlist">Our playlist</a>
+        <a href="#little-note">A little note</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero section" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            A LITTLE UNIVERSE MADE JUST FOR YOU
+          </p>
+
+          <h1>
+            My Beloved<br />
+            <span>Baby</span> <span class="heart-mark">♡</span>
+          </h1>
+
+          <p class="hero-lede">
+            If the night sky could keep every reason I love you, the stars would
+            never run out. This little corner of the universe is yours, my baby.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#letter">
+              Open your letter <span>♡</span>
+            </a>
+            <a class="button secondary" href="#memories">
+              Our little memories ✧
+            </a>
+          </div>
+
+          <p class="tiny-note">
+            For my favorite person, under every shade of blue. ☾
+          </p>
+        </div>
+
+        <div class="hero-art" aria-label="Decorative moon and glowing heart">
+          <div class="planet-ring ring-one"></div>
+          <div class="planet-ring ring-two"></div>
+          <div class="moon">☾</div>
+          <div class="heart-orb">♥</div>
+
+          <span class="sparkle s1">✦</span>
+          <span class="sparkle s2">✧</span>
+          <span class="sparkle s3">✦</span>
+          <span class="orbiting-heart oh1">♡</span>
+          <span class="orbiting-heart oh2">♥</span>
+
+          <div class="art-caption">
+            you are my favorite<br />
+            <span>kind of forever</span>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#memories" aria-label="Scroll down">↓</a>
+      </section>
+
+      <!-- MEMORIES SECTION -->
+      <section class="section memories-section" id="memories">
+        <div class="section-heading">
+          <p class="eyebrow">OUR LITTLE TIME CAPSULE</p>
+          <h2>Little moments, <em>big feelings.</em></h2>
+          <p>
+            Every photo holds a piece of our story. Tap a card for a tiny
+            reminder of our memories together.
+          </p>
+        </div>
+
+        <div class="memory-grid">
+          <!-- PHOTO 1 -->
+          <button
+            class="memory-card"
+            data-memory="One of my favorite memories with you. I wish I could pause this moment and stay here a little longer. ♡"
+          >
+            <div
+              class="photo-placeholder photo-one"
+              role="img"
+              aria-label="Our first photo"
+            ></div>
+
+            <div class="memory-caption">
+              <span>MEMORY 01</span>
+              <strong>My favorite moment</strong>
+              <p>A moment I want to keep close.</p>
+            </div>
+          </button>
+
+          <!-- PHOTO 2 -->
+          <button
+            class="memory-card"
+            data-memory="Even the simplest day becomes special when I get to share it with you. ✧"
+          >
+            <div
+              class="photo-placeholder photo-two"
+              role="img"
+              aria-label="Our second photo"
+            ></div>
+
+            <div class="memory-caption">
+              <span>MEMORY 02</span>
+              <strong>Just us being us</strong>
+              <p>The little things are my favorite.</p>
+            </div>
+          </button>
+
+          <!-- PHOTO 3 -->
+          <button
+            class="memory-card"
+            data-memory="Here's to the memories we've made and all the sweet little adventures still waiting for us. ☾"
+          >
+            <div
+              class="photo-placeholder photo-three"
+              role="img"
+              aria-label="Our third photo"
+            ></div>
+
+            <div class="memory-caption">
+              <span>MEMORY 03</span>
+              <strong>More to come</strong>
+              <p>Our story is still unfolding.</p>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <!-- LOVE LETTER SECTION -->
+      <section class="section letter-section" id="letter">
+        <div class="section-heading">
+          <p class="eyebrow">SEALED WITH ALL MY LOVE</p>
+          <h2>A letter for <em>my baby.</em></h2>
+          <p>Come a little closer. There's something I want you to know. ♡</p>
+        </div>
+
+        <div class="envelope-wrap">
+          <button
+            class="envelope"
+            id="envelope"
+            aria-label="Open your love letter"
+            aria-expanded="false"
+          >
+            <span class="envelope-back"></span>
+
+            <span class="letter-paper">
+              <span class="letter-paper-title">To my beloved baby,</span>
+              <span class="letter-paper-lines">
+                a little piece of my heart ♡
+              </span>
+            </span>
+
+            <span class="envelope-flap"></span>
+            <span class="wax-seal">♡</span>
+          </button>
+
+          <p class="envelope-hint" id="envelope-hint">
+            Tap the envelope to open your letter
+          </p>
+        </div>
+
+        <article class="letter-content" id="letter-content" hidden>
+          <p class="letter-greeting">To my beloved baby,</p>
+
+          <p>
+            I made this little place just for you because you deserve something
+            that reminds you how special you are to me. If I could, I would
+            gather every tiny star in the sky and turn them into little
+            reminders of how much you mean to me.
+          </p>
+
+          <p>
+            I love the little moments we share, the laughs, the talks, and even
+            the ordinary days that feel warmer just because you're part of them.
+            I don't need us to be perfect. I want us to be honest, patient, and
+            kind to each other as we keep growing.
+          </p>
+
+          <p>
+            Whenever life gets heavy, I hope you remember to be gentle with
+            yourself, too. Your dreams matter, your happiness matters, and you
+            deserve to feel loved not only on your best days but on the quiet,
+            difficult ones as well.
+          </p>
+
+          <p>
+            Thank you for being my favorite person and for being part of my
+            story. If I could choose one little wish, it would be to keep making
+            sweet memories with you, one day at a time.
+          </p>
+
+          <p class="letter-signoff">
+            With all my love,<br />
+            <span>your person ♡</span>
+          </p>
+
+          <p class="edit-hint">
+            Make it even more personal by editing this letter in
+            <code>index.html</code>.
+          </p>
+        </article>
+      </section>
+
+      <!-- PLAYLIST SECTION -->
+      <section class="section playlist-section" id="playlist">
+        <div class="playlist-shell">
+          <div class="playlist-visual">
+            <div class="disc" id="disc">
+              <div class="disc-label">♡</div>
+            </div>
+
+            <div class="sound-bars" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+
+            <p class="visual-caption">our little soundtrack</p>
+          </div>
+
+          <div class="playlist-content">
+            <p class="eyebrow">PRESS PLAY, MY LOVE</p>
+            <h2>A playlist for <em>you &amp; me.</em></h2>
+
+            <p class="playlist-description">
+              Songs that remind me of you, our moments, and all the feelings I
+              can't always put into words.
+            </p>
+
+            <div class="track-list">
+              <div class="track active" data-track="0">
+                <span class="track-number">01</span>
+                <span class="track-icon">♫</span>
+
+                <span class="track-details">
+                  <strong>Our Song</strong>
+                  <small>A song for my beloved</small>
+                </span>
+
+                <button class="track-play" aria-label="Play Our Song">▶</button>
+              </div>
+
+              <div class="track" data-track="1">
+                <span class="track-number">02</span>
+                <span class="track-icon">♪</span>
+
+                <span class="track-details">
+                  <strong>I am always yours</strong>
+                  <small>I am always yours, my love</small>
+                </span>
+
+                <button
+                  class="track-play"
+                  aria-label="Play I am always yours"
+                >
+                  ▶
+                </button>
+              </div>
+
+              <div class="track" data-track="2">
+                <span class="track-number">03</span>
+                <span class="track-icon">♫</span>
+
+                <span class="track-details">
+                  <strong>Thinking of you</strong>
+                  <small>always thinking of you, my love</small>
+                </span>
+
+                <button
+                  class="track-play"
+                  aria-label="Play Thinking of you"
+                >
+                  ▶
+                </button>
+              </div>
+            </div>
+
+            <div class="now-playing">
+              <button
+                class="main-play"
+                id="main-play"
+                aria-label="Play or pause current song"
+              >
+                ▶
+              </button>
+
+              <div class="now-info">
+                <strong id="now-title">Our Song</strong>
+                <span id="now-status">Add audio files to your playlist ♡</span>
+                <div class="progress-track">
+                  <div id="progress-fill"></div>
+                </div>
+              </div>
+
+              <span class="now-heart">♡</span>
+            </div>
+
+            <audio id="audio-player" preload="metadata"></audio>
+            <p class="music-note"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LITTLE NOTE SECTION -->
+      <section class="section note-section" id="little-note">
+        <div class="section-heading">
+          <p class="eyebrow">A TINY MESSAGE, JUST FOR YOU</p>
+          <h2>For when you need a <em>little reminder.</em></h2>
+        </div>
+
+        <div class="note-card">
+          <div class="note-star">✧</div>
+          <p class="note-main">Hey, my beloved baby...</p>
+
+          <p class="note-body">
+            Take a breath. Unclench your shoulders. You don't have to do
+            everything perfectly today. I'm proud of you for trying, and I hope
+            you remember to give yourself the same kindness you give to others.
+            You matter so much. ♡
+          </p>
+
+          <button class="button primary" id="new-note">
+            Give me another little note ✨
+          </button>
+
+          <p class="note-response" id="note-response" aria-live="polite"></p>
+        </div>
+
+        <div class="surprise-card">
+          <div class="gift-icon" id="gift-icon">🎁</div>
+          <p class="eyebrow">ONE LAST LITTLE SURPRISE</p>
+          <h3>A secret from my heart</h3>
+          <p>There's one more message tucked away for you.</p>
+
+          <button class="button secondary" id="reveal-surprise">
+            Open your surprise ♡
+          </button>
+
+          <div class="secret-message" id="secret-message" hidden>
+            <div class="secret-stars">✦ ✧ ♡ ✧ ✦</div>
+
+            <p>
+              No matter how big the world feels, I hope you always have room to
+              chase your dreams, laugh until your cheeks hurt, and enjoy the
+              little things that make you happy. I am grateful for you, proud of
+              you, and happy that our paths crossed. This page is small, but the
+              thought behind it is full of love. ♡
+            </p>
+
+            <strong>In every shade of blue, you're my favorite. ☾</strong>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <p class="eyebrow">ONE CUTE QUESTION</p>
+          <h3>Can I keep making beautiful memories with you?</h3>
+
+          <div class="question-actions">
+            <button class="button primary" id="yes-button">
+              Yes, of course! ♡
+            </button>
+
+            <button class="button secondary" id="maybe-button">
+              Let me think... ☁
+            </button>
+          </div>
+
+          <p id="answer-message" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-heart">♡</div>
+        <p>Made for my beloved baby, with all my love.</p>
+        <span>YOU + ME · UNDER THE SAME SKY ✧</span>
+      </footer>
+    </main>
+
+    <!-- MEMORY POPUP -->
+    <dialog id="memory-dialog" class="memory-dialog">
+      <button
+        class="dialog-close"
+        id="dialog-close"
+        aria-label="Close memory"
+      >
+        ×
+      </button>
+
+      <div class="dialog-heart">♡</div>
+      <p id="dialog-text">A favorite memory.</p>
+      <small>A tiny memory from your little universe.</small>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+```
